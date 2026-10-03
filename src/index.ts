@@ -22,7 +22,7 @@ async function main() {
   }
 
   const ctx: Ctx = { instances, pending: new PendingStore(), dataDir: cfg.dataDir, audit: cfg.audit };
-  const server = new McpServer({ name: "gunbot-mcp", version: "0.1.0" });
+  const server = new McpServer({ name: "gunbot-mcp", version: "0.1.0-beta.1" });
   registerReadTools(server, ctx);
   registerWriteTools(server, ctx);
 

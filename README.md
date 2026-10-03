@@ -1,5 +1,13 @@
 # gunbot-mcp
 
+> ## ⚠️ BETA SOFTWARE
+> This project is in **beta** (`0.1.0-beta.1`). It has been built from Gunbot's public API docs and tested against a mock server, **not yet across a range of real Gunbot installs**. Expect rough edges, and expect behaviour to change between releases.
+>
+> - Run it on a **paper-trading or low-stakes instance first**.
+> - Keep it on the default **`read-only`** profile until you've seen it work correctly against your own setup.
+> - Treat every write (`config` and above) as experimental, and review each diff before applying it.
+> - Please [open an issue](../../issues) with anything that behaves differently from what's documented here.
+
 An **unofficial** [Model Context Protocol](https://modelcontextprotocol.io) server for the [Gunbot](https://www.gunbot.com) REST API. It lets an AI assistant check on your bots, review config, and (if you allow it) make controlled changes, with you choosing exactly how much power it gets.
 
 > **Not affiliated with or endorsed by Gunbot / Gunthy.** "Gunbot" is their trademark.
@@ -113,7 +121,7 @@ Read this before enabling anything above `read-only`.
 
 ## Status
 
-Early (`0.1.0`). Built from Gunbot's public API docs and tested against a mock server, not yet against a range of real instances.
+**Beta** (`0.1.0-beta.1`). Built from Gunbot's public API docs and tested against a mock server, not yet against a range of real instances.
 
 - Verified against docs: login encryption, config get/update/pair add/remove, balances, pairs, candles, orderbook, coremem, state files, backups, start/stop.
 - **Unverified response shapes:** PNL (`/pnl/sum`), and Gunbot's behaviour when writing back the full config. Please test on a non-production instance and open an issue with what you find.
