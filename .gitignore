@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+.env.*
+gunbot-mcp.config.json
+*.log
+backups/
+.DS_Store

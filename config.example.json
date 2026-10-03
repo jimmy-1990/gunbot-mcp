@@ -1,0 +1,21 @@
+{
+  "profile": "read-only",
+  "deny": [],
+  "allow": [],
+  "flags": { "strategyWrites": false, "trading": false },
+  "audit": true,
+  "instances": {
+    "main": {
+      "url": "http://192.168.1.50:3001",
+      "passwordEnv": "GUNBOT_MAIN_PASSWORD",
+      "walletKeyEnv": "GUNBOT_MAIN_WALLET_KEY"
+    },
+    "paper": {
+      "url": "http://192.168.1.51:3001",
+      "passwordEnv": "GUNBOT_PAPER_PASSWORD",
+      "walletKeyEnv": "GUNBOT_PAPER_WALLET_KEY",
+      "profile": "operator",
+      "writableParams": ["BUY_LEVEL", "SELL_LEVEL", "TRADING_LIMIT", "GAIN", "PERIOD"]
+    }
+  }
+}
