@@ -1,7 +1,7 @@
 {
   "name": "gunbot-mcp",
-  "version": "0.1.0",
-  "description": "Unofficial MCP server for the Gunbot REST API with configurable permission profiles (read-only, config, operator, full)",
+  "version": "0.1.0-beta.1",
+  "description": "[BETA] Unofficial MCP server for the Gunbot REST API with configurable permission profiles (read-only, config, operator, full)",
   "type": "module",
   "main": "dist/index.js",
   "bin": { "gunbot-mcp": "dist/index.js" },
