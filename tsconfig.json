@@ -8,7 +8,12 @@
     "strict": true,
     "skipLibCheck": true,
     "noEmitOnError": false,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "types": [
+      "node"
+    ]
   },
-  "include": ["src/**/*"]
+  "include": [
+    "src/**/*"
+  ]
 }

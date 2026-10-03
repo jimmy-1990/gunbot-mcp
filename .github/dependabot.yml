@@ -4,10 +4,20 @@ updates:
     directory: /
     schedule:
       interval: weekly
-    groups:
-      dev-dependencies:
-        dependency-type: development
     open-pull-requests-limit: 5
+    # Only minor/patch updates are grouped. Major bumps arrive as separate PRs
+    # so a breaking change can't hide inside a routine group update.
+    groups:
+      dev-minor-patch:
+        dependency-type: development
+        update-types: [minor, patch]
+    ignore:
+      # Types should match the oldest supported runtime (engines: node >=20).
+      - dependency-name: "@types/node"
+        update-types: ["version-update:semver-major"]
+      # zod 4 needs a code migration; tracked separately.
+      - dependency-name: zod
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: github-actions
     directory: /
     schedule:
