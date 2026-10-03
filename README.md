@@ -108,7 +108,7 @@ Every tool takes an optional `instance` argument (required only when several are
 
 ## Security model
 
-Read this before enabling anything above `read-only`.
+Read this before enabling anything above `read-only`. To report a vulnerability privately, see [SECURITY.md](SECURITY.md).
 
 - **This restricts the MCP server, not your Gunbot password.** Gunbot's API has no scoped tokens: one login can do everything, including manual trades and license-key edits. Anyone who has your password can bypass these profiles. They exist to keep an *AI assistant* on a leash, not to be access control.
 - **Credentials never reach the model.** Everything returned is run through a redactor (credential-looking keys at any depth, plus `ENC:` and JWT-shaped values). It is deliberately not configurable. Error messages never include response bodies.
