@@ -1,0 +1,8 @@
+# Security-critical code: changes here need owner review.
+*                      @jimmy-1990
+/src/redact.ts         @jimmy-1990
+/src/permissions.ts    @jimmy-1990
+/src/client.ts         @jimmy-1990
+/src/changes.ts        @jimmy-1990
+/SECURITY.md           @jimmy-1990
+/.github/              @jimmy-1990
